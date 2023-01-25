@@ -564,3 +564,13 @@ video {
 .resize{
   resize: both;
 }
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  background-color: #010026;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
