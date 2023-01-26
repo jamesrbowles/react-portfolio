@@ -22,12 +22,13 @@ const Testimonials = () => {
         <p className="font-playfair font-semibold text-4xl mb-5 text-red">
           TESTIMONIALS
         </p>
-        <LineGradient width="max-auto w-2/4" />
+        <LineGradient width="mx-auto w-2/5" />
         <p className="mt-10">
           as opposed to using 'Content here, content here', making it look like
-          readable English. Many desktop publishing packages and
+          readable English.
         </p>
       </motion.div>
+
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
@@ -44,7 +45,7 @@ const Testimonials = () => {
           <p className="font-playfair text-6xl">"</p>
           <p className="text-center text-xl">
             pposed to using 'Content here, content here', making it look like
-            readable English. Many desktop publishing pac
+            readable English. M
           </p>
         </motion.div>
         <motion.div
@@ -79,7 +80,7 @@ const Testimonials = () => {
           <p className="font-playfair text-6xl">"</p>
           <p className="text-center text-xl">
             pposed to using 'Content here, content here', making it look like
-            readable English. Many desktop publishing pac
+            readable Englihing pac
           </p>
         </motion.div>
       </div>
