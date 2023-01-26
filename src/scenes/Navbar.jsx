@@ -2,6 +2,7 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 
+// selected page and individual link styling
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
@@ -16,7 +17,13 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   );
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+// navbar desktop and mobile
+const Navbar = ({
+  isTopOfPage,
+  selectedPage,
+  setSelectedPage,
+  pageSections,
+}) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-red";
@@ -27,32 +34,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
-            <Link
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Skills"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Projects"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            {/*      <Link
-              page="Testimonials"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            /> */}
-            <Link
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold capitalize">
+            {pageSections.map((page) => {
+              return (
+                <Link
+                  page={page}
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+              );
+            })}
           </div>
         ) : (
           <button
@@ -73,32 +64,19 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               </button>
             </div>
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
-              <Link
-                page="Home"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Skills"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Projects"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Testimonials"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Contact"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
+            <div
+              className="flex flex-col gap-10 ml-[33%] text-2xl 
+            text-deep-blue capitalize"
+            >
+              {pageSections.map((page) => {
+                return (
+                  <Link
+                    page={page}
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                );
+              })}
             </div>
           </div>
         )}

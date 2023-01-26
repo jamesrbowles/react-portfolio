@@ -15,6 +15,9 @@ import Testimonials from "./scenes/Testimonials";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 
+// Page Sections
+const pageSections = ["home", "skills", "projects", "contact"];
+
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -39,12 +42,14 @@ function App() {
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
+        pageSections={pageSections}
       />
       <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
+            pageSections={pageSections}
           />
         )}
         <motion.div
