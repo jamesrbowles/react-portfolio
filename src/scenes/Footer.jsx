@@ -9,10 +9,10 @@ const Footer = () => {
 
         <div className="md:flex justify-center md:justify-between text-center">
           <p className="font-playfair font-semibold text-2xl text-yellow">
-            JANE ESPER
+            JAMES BOWLES
           </p>
           <p className="font-playfair text-md text-yellow md:ml-4">
-            ©2022 ESPER. All Rights Reserved.
+            ©2023 BOWLES. All Rights Reserved.
           </p>
         </div>
       </div>

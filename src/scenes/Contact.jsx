@@ -75,9 +75,9 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-slate-50 font-semibold placeholder-opaque-black p-3"
               type="text"
-              placeholder="NAME"
+              placeholder="Name"
               {...register("name", {
                 required: true,
                 maxLength: 100,
@@ -92,9 +92,9 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-slate-50 font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
-              placeholder="EMAIL"
+              placeholder="Email"
               {...register("email", {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -107,9 +107,9 @@ const Contact = () => {
               </p>
             )}
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-slate-50 font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
-              placeholder="MESSAGE"
+              placeholder="Message"
               rows="4"
               cols="50"
               {...register("message", {

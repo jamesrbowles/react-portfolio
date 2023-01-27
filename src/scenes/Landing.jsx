@@ -14,13 +14,13 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10 mx-24"
     >
       {/*  IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
+            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 
             before:w-full before:max-w-[400px] md:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
@@ -38,7 +38,7 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
       {/*  MAIN SECTION */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-1/2 mt-12 md:mt-32">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -50,18 +50,19 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jane {""}
+            James {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
-              Esper
+              Bowles
             </span>
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book
+          <p className="mt-10 mb-7 text-sm text-center md:text-start z-30">
+            Front-end engineer specialising in JavaScript and ReactJS. Take a
+            deep dive into my portfolio to learn a little more. I am always
+            eager to take on new challenges and am dedicated to delivering
+            high-quality work.
           </p>
         </motion.div>
 

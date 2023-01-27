@@ -12,3 +12,29 @@ body,
   background-color: #010026;
   @apply text-white;
 }
+
+/* SVG dividers */
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.layer1 {
+  background-image: url("../public/assets/layered-waves.svg");
+}
+
+.layer2 {
+  background-image: url("../public/assets/layered-peaks.svg");
+}
+
+.layer3 {
+  background-image: url("../public/assets/layered-waves2.svg");
+}

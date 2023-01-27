@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+/* FIX Z-INDEX of DOTGROUP - probs have to create a div for all the sections put it inside with them */
+
 // hooks
 import useMediaQuery from "./hooks/useMediaQuery";
 
@@ -44,7 +46,7 @@ function App() {
         setSelectedPage={setSelectedPage}
         pageSections={pageSections}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="mx-auto md:h-full relative z-10">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -59,9 +61,12 @@ function App() {
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
+        <div className="spacer layer1"></div>
       </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-full h-0.5"></div>
+      {/* <LineGradient /> */}
+
+      <div className="mx-auto md:h-full relative z-10">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -69,9 +74,12 @@ function App() {
         >
           <MySkills />
         </motion.div>
+        <div className="spacer layer2"></div>
       </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-full h-0.5"></div>
+      {/*     <LineGradient /> */}
+
+      <div className="mx-auto relative z-10">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -79,8 +87,12 @@ function App() {
         >
           <Projects />
         </motion.div>
+        <div className="spacer layer3"></div>
       </div>
-      <LineGradient />
+      <div className="w-full h-0.5"></div>
+      {/*     <LineGradient /> */}
+
+      {/*   TESTIMONIALS SECTION */}
       {/*       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
