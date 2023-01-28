@@ -10,7 +10,7 @@ import LineGradient from "../components/LineGradient";
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pb-24 mx-24 z-10">
+    <section id="skills" className="py-10 md:h-full mx-24 z-10">
       {/*  HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div

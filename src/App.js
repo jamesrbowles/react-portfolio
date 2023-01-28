@@ -46,14 +46,14 @@ function App() {
         setSelectedPage={setSelectedPage}
         pageSections={pageSections}
       />
+      {isAboveMediumScreens && (
+        <DotGroup
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+          pageSections={pageSections}
+        />
+      )}
       <div className="mx-auto md:h-full relative z-10">
-        {isAboveMediumScreens && (
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            pageSections={pageSections}
-          />
-        )}
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
