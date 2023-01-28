@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="app bg-deep-blue relative pb-30">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -53,7 +53,7 @@ function App() {
           pageSections={pageSections}
         />
       )}
-      <div className="mx-auto md:h-full relative z-10">
+      <div className="mx-auto md:h-screen relative z-10">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -103,7 +103,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient /> */}
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-screen">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
