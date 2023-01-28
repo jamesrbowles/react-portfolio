@@ -33,7 +33,7 @@ const Landing = ({ setSelectedPage }) => {
           <img
             src="../assets/profile-image.png"
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
           />
         )}
       </div>
@@ -58,11 +58,9 @@ const Landing = ({ setSelectedPage }) => {
               Bowles
             </span>
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start z-30">
+          <p className="mt-10 mb-7 text-sm text-center md:text-start z-30 text-para-text">
             Front-end engineer specialising in JavaScript and ReactJS. Take a
-            deep dive into my portfolio to learn a little more. I am always
-            eager to take on new challenges and am dedicated to delivering
-            high-quality work.
+            deep dive into my portfolio to learn a little more.
           </p>
         </motion.div>
 

@@ -12,8 +12,8 @@
 
 .app {
   height: 100%;
-  background-color: #010026;
-  @apply text-white;
+  background-color: #242629;
+  color: #fffffe;
 }
 
 /* SVG dividers */
@@ -30,6 +30,10 @@
   z-index: -1;
 }
 
+.reverse {
+  top: 0 !important;
+}
+
 .layer1 {
   background-image: url("../public/assets/layered-waves.svg");
 }
@@ -40,4 +44,8 @@
 
 .layer3 {
   background-image: url("../public/assets/layered-waves2.svg");
+}
+
+.layer4 {
+  background-image: url("../public/assets/layered-waves-reverse.svg");
 }

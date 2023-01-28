@@ -9,9 +9,7 @@ const DotGroup = ({ selectedPage, setSelectedPage, pageSections }) => {
       {pageSections.map((page) => {
         return (
           <AnchorLink
-            className={`${
-              selectedPage === page ? selectedStyles : "bg-dark-grey"
-            }
+            className={`${selectedPage === page ? selectedStyles : "bg-white"}
       w-3 h-3 rounded-full`}
             href={`#${page}`}
             onClick={() => setSelectedPage(page)}
