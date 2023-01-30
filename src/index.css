@@ -18,7 +18,20 @@
   color: #fffffe;
 }
 
+.gradient {
+  background: -webkit-linear-gradient(#242629, #2cb67d 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* SVG dividers */
+
+.divider {
+  border-radius: 10px;
+  /*   box-shadow: 0 0 30px 10px #2cb67d; */
+  box-shadow: 0 0 10px #2cb67d, 0 0 20px #2cb67d, 0 0 40px #2cb67d,
+    0 0 80px #2cb67d, 0 0 120px #2cb67d;
+}
 
 .spacer {
   aspect-ratio: 960/75;

@@ -11,7 +11,6 @@ const AnimatedSphere = () => {
         distort={0.3}
         speed={1.5}
       />
-      {/*       <meshStandardMaterial color="#2cb67d" /> */}
     </Sphere>
   );
 };

@@ -16,6 +16,7 @@ import Projects from "./scenes/Projects";
 import Testimonials from "./scenes/Testimonials";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
+import SocialMediaIcons from "./components/SocialMediaIcons";
 
 // Page Sections
 const pageSections = ["home", "skills", "projects", "contact"];
@@ -63,7 +64,7 @@ function App() {
         </motion.div>
         {/*     <div className="spacer layer1"></div> */}
       </div>
-      <div className="w-full h-0.5 bg-red"></div>
+      <div className="w-11/12 h-1 mx-auto shadow-sm bg-green divider"></div>
       {/* <LineGradient /> */}
 
       <div className="mx-auto md:h-full relative z-10">
@@ -111,6 +112,21 @@ function App() {
           onViewportEnter={() => setSelectedPage("contact")}
         >
           <Contact />
+        </motion.div>
+      </div>
+      <div className="fixed bottom-0 left-5 z-50">
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <SocialMediaIcons />
         </motion.div>
       </div>
       <Footer />
