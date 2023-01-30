@@ -61,13 +61,13 @@ function App() {
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
-        <div className="spacer layer1"></div>
+        {/*     <div className="spacer layer1"></div> */}
       </div>
-      <div className="w-full"></div>
+      <div className="w-full h-0.5 bg-red"></div>
       {/* <LineGradient /> */}
 
       <div className="mx-auto md:h-full relative z-10">
-        <div className="spacer layer4 reverse"></div>
+        {/*  <div className="spacer layer4 reverse"></div> */}
         <motion.div
           margin="0 0 -200px 0"
           amount="all"

@@ -90,7 +90,7 @@ const Landing = ({ setSelectedPage }) => {
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
-              Let's talk.
+              Learn more
             </div>
           </AnchorLink>
         </motion.div>
