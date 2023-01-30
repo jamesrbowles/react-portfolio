@@ -7,8 +7,8 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "text-yellow" : ""}
-      hover:text-yellow transition duration-500`}
+      className={`${selectedPage === lowerCasePage ? "text-green" : ""}
+      hover:text-green transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -26,15 +26,17 @@ const Navbar = ({
 }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-bg-shade";
+  const navbarBackground = isTopOfPage
+    ? ""
+    : "bg-dark-grey border-b-2 border-bg-shade shadow-lg";
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">JB</h4>
+        <img src="../assets/logo-white.png" alt="logo" className="h-10" />
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold capitalize">
+          <div className="flex justify-between gap-16 font-leagueSpartan text-xl font-semibold capitalize">
             {pageSections.map((page) => {
               return (
                 <Link

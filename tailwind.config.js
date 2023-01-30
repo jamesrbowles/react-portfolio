@@ -5,15 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: "#2CBCE9",
-        red: "#7f5af0",
-        yellow: "#2cb67d",
-        grey: "#EDEDED",
+        green: "#2cb67d",
+        grey: "#94a1b2",
         white: "#fffffe",
         "dark-grey": "#242629",
         "bg-shade": "#121315",
-        "para-text": "#94a1b2",
-        "opaque-black": "rgba(0,0,0,0.35)",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -24,6 +20,8 @@ module.exports = {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
+        leagueSpartan: ["League Spartan", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       content: {
         brush: "url('./assets/brush.png')",

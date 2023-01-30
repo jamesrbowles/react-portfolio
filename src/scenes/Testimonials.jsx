@@ -19,7 +19,7 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-montserrat font-semibold text-4xl mb-5 text-red">
           TESTIMONIALS
         </p>
         <LineGradient width="mx-auto w-2/5" />
@@ -42,7 +42,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
+          <p className="font-montserrat text-6xl">"</p>
           <p className="text-center text-xl">
             pposed to using 'Content here, content here', making it look like
             readable English. M
@@ -59,7 +59,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
+          <p className="font-montserrat text-6xl">"</p>
           <p className="text-center text-xl">
             pposed to using 'Content here, content here', making it look like
             readable English. Many desktop publishing pac
@@ -67,7 +67,7 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className={`bg-yellow ${testimonialStyles} before:content-person3`}
+          className={`bg-green ${testimonialStyles} before:content-person3`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -77,7 +77,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
+          <p className="font-montserrat text-6xl">"</p>
           <p className="text-center text-xl">
             pposed to using 'Content here, content here', making it look like
             readable Englihing pac

@@ -31,8 +31,8 @@ const Contact = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+          <p className="font-montserrat font-semibold text-4xl">
+            <span className="text-green">CONTACT ME</span> TO GET STARTED
           </p>
 
           <div className="flex md:justify-end my-5">
@@ -127,7 +127,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-green font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
             >
               SEND ME A MESSAGE
             </button>

@@ -8,10 +8,10 @@ const Footer = () => {
         <SocialMediaIcons />
 
         <div className="md:flex justify-center md:justify-between text-center">
-          <p className="font-playfair font-semibold text-2xl text-yellow">
+          <p className="font-montserrat font-semibold text-2xl text-green">
             JAMES BOWLES
           </p>
-          <p className="font-playfair text-md text-yellow md:ml-4">
+          <p className="font-montserrat text-md text-green md:ml-4">
             ©2023 BOWLES. All Rights Reserved.
           </p>
         </div>

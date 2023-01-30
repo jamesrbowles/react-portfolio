@@ -2,7 +2,7 @@ import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const DotGroup = ({ selectedPage, setSelectedPage, pageSections }) => {
-  const selectedStyles = `relative bg-yellow before:absolute before:w-6 before:h-6 before:rounded-full before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`;
+  const selectedStyles = `relative bg-green before:absolute before:w-6 before:h-6 before:rounded-full before:border-2 before:border-green before:left-[-50%] before:top-[-50%]`;
 
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7 z-20">
