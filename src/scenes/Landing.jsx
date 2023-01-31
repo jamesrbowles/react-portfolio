@@ -12,7 +12,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import Sphere from "../components/Sphere";
 import Sphere2 from "../components/Sphere2";
 
-const Landing = ({ setSelectedPage }) => {
+const Landing = ({ setSelectedPage, handleProjectsBtn }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
@@ -25,8 +25,8 @@ const Landing = ({ setSelectedPage }) => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: -100 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
           <p className="text-9xl font-leagueSpartan z-10 text-center uppercase font-extrabold">
@@ -36,15 +36,15 @@ const Landing = ({ setSelectedPage }) => {
       </div>
 
       {/* TAGLINE & BUTTONS SECTION */}
-      <div className="flex flex-col justify-center z-30 mt-32 w-full">
+      <div className="flex flex-col justify-center relative top-1/4 z-30  w-full">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: -100 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
           <p className="mt-10 mb-7 text-xl text-center text-grey font-montserrat">
@@ -60,29 +60,27 @@ const Landing = ({ setSelectedPage }) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -100 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
-            <AnchorLink
+            {/*             <AnchorLink
               className="basis-1/2 rounded-sm py-3 px-7
                 transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-grey hover:text-dark-grey text-center font-bold"
               onClick={() => setSelectedPage("contact")}
               href="#contact"
             >
               Contact Me
-            </AnchorLink>
+            </AnchorLink> */}
             <AnchorLink
               className="basis-1/2 rounded-sm py-3 px-7
                 transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-grey hover:text-dark-grey  text-center font-bold "
-              onClick={() => setSelectedPage("contact")}
-              href="#contact"
+              onClick={handleProjectsBtn}
+              href="#projects"
             >
-              {/* <div className="transition duration-500 hover:bg-grey w-full h-full flex items-center justify-center font-montserrat px-10"> */}
-              Learn more
-              {/*  </div> */}
+              See Projects
             </AnchorLink>
           </motion.div>
         </div>

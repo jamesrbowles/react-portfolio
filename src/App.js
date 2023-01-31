@@ -19,13 +19,20 @@ import Footer from "./scenes/Footer";
 import SocialMediaIcons from "./components/SocialMediaIcons";
 
 // Page Sections
-const pageSections = ["home", "skills", "projects", "contact"];
+const pageSections = ["home", "projects", "skills", "contact"];
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
+  const [projectsBtnActive, setProjectsBtnActive] = useState(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
+  const handleProjectsBtn = () => {
+    setSelectedPage("projects");
+    setProjectsBtnActive(true);
+  };
+
+  /*   Logic for navbar if user at top of screen */
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
@@ -54,33 +61,24 @@ function App() {
           pageSections={pageSections}
         />
       )}
+      {/* LANDING PAGE */}
       <div className="mx-auto md:h-screen relative z-10">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
           onViewportEnter={() => setSelectedPage("home")}
         >
-          <Landing setSelectedPage={setSelectedPage} />
+          <Landing
+            setSelectedPage={setSelectedPage}
+            handleProjectsBtn={handleProjectsBtn}
+          />
         </motion.div>
-        {/*     <div className="spacer layer1"></div> */}
       </div>
+
+      {/*  DIVIDER */}
       <div className="w-11/12 h-1 mx-auto shadow-sm bg-green divider"></div>
-      {/* <LineGradient /> */}
 
-      <div className="mx-auto md:h-full relative z-10">
-        {/*  <div className="spacer layer4 reverse"></div> */}
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("skills")}
-        >
-          <MySkills />
-        </motion.div>
-        <div className="spacer layer2"></div>
-      </div>
-      <div className="w-full h-0.5"></div>
-      {/*     <LineGradient /> */}
-
+      {/* PROJECTS */}
       <div className="mx-auto relative z-10">
         <motion.div
           margin="0 0 -200px 0"
@@ -89,13 +87,25 @@ function App() {
         >
           <Projects />
         </motion.div>
-        <div className="spacer layer3"></div>
       </div>
+
       <div className="w-full h-0.5"></div>
-      {/*     <LineGradient /> */}
+
+      {/* SKILLS */}
+      <div className="mx-auto md:h-full relative z-10">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <MySkills />
+        </motion.div>
+      </div>
+
+      <div className="w-full h-0.5"></div>
 
       {/*   TESTIMONIALS SECTION */}
-      {/*       <div className="w-5/6 mx-auto md:h-full">
+      {/*            <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -103,8 +113,8 @@ function App() {
         >
           <Testimonials />
         </motion.div>
-      </div>
-      <LineGradient /> */}
+      </div> */}
+
       <div className="w-5/6 mx-auto md:h-screen">
         <motion.div
           margin="0 0 -200px 0"
