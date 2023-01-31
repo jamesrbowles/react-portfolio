@@ -40,6 +40,7 @@ const Navbar = ({
             {pageSections.map((page) => {
               return (
                 <Link
+                  key={page}
                   page={page}
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
@@ -73,6 +74,7 @@ const Navbar = ({
               {pageSections.map((page) => {
                 return (
                   <Link
+                    key={page}
                     page={page}
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}

@@ -17,23 +17,41 @@
   background-color: #242629;
   color: #fffffe;
 }
-
+/* 
 .gradient {
   background: -webkit-linear-gradient(#242629, #2cb67d 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+
+/* Project button line after click */
+line {
+  stroke-width: 3;
+  border-radius: 0 0 5px 5px;
+  stroke-linecap: round;
+  fill: transparent;
+  filter: drop-shadow(0 0 2px #2cb67d) drop-shadow(0 0 4px #2cb67d);
+}
+
+.parent {
+  width: 20px;
+  height: auto;
+}
+
+.project-line {
+  width: 100%;
+  height: auto;
 }
 
 /* SVG dividers */
 
 .divider {
   border-radius: 10px;
-  /*   box-shadow: 0 0 30px 10px #2cb67d; */
   box-shadow: 0 0 10px #2cb67d, 0 0 20px #2cb67d, 0 0 40px #2cb67d,
     0 0 80px #2cb67d, 0 0 120px #2cb67d;
 }
 
-.spacer {
+/* .spacer {
   aspect-ratio: 960/75;
   width: 100%;
   background-repeat: no-repeat;
@@ -64,3 +82,4 @@
 .layer4 {
   background-image: url("../public/assets/layered-waves-reverse.svg");
 }
+ */

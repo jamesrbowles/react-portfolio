@@ -12,8 +12,22 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import Sphere from "../components/Sphere";
 import Sphere2 from "../components/Sphere2";
 
-const Landing = ({ setSelectedPage, handleProjectsBtn }) => {
+const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i) => {
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: { type: "spring", duration: 1.5, bounce: 0 },
+          opacity: { duration: 0.01 },
+        },
+      };
+    },
+  };
 
   return (
     <section id="home" className="py-10 mx-24 h-screen relative">
@@ -76,7 +90,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn }) => {
             </AnchorLink> */}
             <AnchorLink
               className="basis-1/2 rounded-sm py-3 px-7
-                transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-grey hover:text-dark-grey  text-center font-bold "
+                transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-white hover:text-dark-grey/75 font-leagueSpartan text-2xl text-center font-semibold tracking-wider"
               onClick={handleProjectsBtn}
               href="#projects"
             >
@@ -84,6 +98,25 @@ const Landing = ({ setSelectedPage, handleProjectsBtn }) => {
             </AnchorLink>
           </motion.div>
         </div>
+        {projectsBtnActive && (
+          <div className="parent mx-auto">
+            <motion.svg
+              className="project-line"
+              viewBox="0 0 20 1000"
+              initial="hidden"
+              animate="visible"
+            >
+              <motion.line
+                x1="10"
+                y1="0"
+                x2="10"
+                y2="95%"
+                stroke="#2cb67d"
+                variants={draw}
+              />
+            </motion.svg>
+          </div>
+        )}
       </div>
 
       {/*  SPHERE SECTION */}
@@ -108,3 +141,25 @@ const Landing = ({ setSelectedPage, handleProjectsBtn }) => {
 };
 
 export default Landing;
+
+/*    {
+     projectsBtnActive && (
+       <motion.svg
+         className="project-line"
+         width="20"
+         height="610"
+         viewBox="0 0 20 610"
+         initial="hidden"
+         animate="visible"
+       >
+         <motion.line
+           x1="10"
+           y1="0"
+           x2="10"
+           y2="600"
+           stroke="#2cb67d"
+           variants={draw}
+         />
+       </motion.svg>
+     );
+   } */

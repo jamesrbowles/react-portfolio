@@ -28,8 +28,8 @@ function App() {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   const handleProjectsBtn = () => {
-    setSelectedPage("projects");
     setProjectsBtnActive(true);
+    setSelectedPage("projects");
   };
 
   /*   Logic for navbar if user at top of screen */
@@ -71,12 +71,13 @@ function App() {
           <Landing
             setSelectedPage={setSelectedPage}
             handleProjectsBtn={handleProjectsBtn}
+            projectsBtnActive={projectsBtnActive}
           />
         </motion.div>
       </div>
 
       {/*  DIVIDER */}
-      <div className="w-11/12 h-1 mx-auto shadow-sm bg-green divider"></div>
+      <div className="w-11/12 h-1 mx-auto bg-green divider"></div>
 
       {/* PROJECTS */}
       <div className="mx-auto relative z-10">
@@ -126,7 +127,7 @@ function App() {
       </div>
       <div className="fixed bottom-0 left-5 z-50">
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          /*      className="flex mt-5 justify-center md:justify-start" */
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
