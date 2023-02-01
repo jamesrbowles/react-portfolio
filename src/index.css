@@ -17,12 +17,11 @@
   background-color: #242629;
   color: #fffffe;
 }
-/* 
-.gradient {
-  background: -webkit-linear-gradient(#242629, #2cb67d 60%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
+
+/* Navbar hover opacity */
+nav:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
 
 /* Project button line after click */
 line {
@@ -43,12 +42,20 @@ line {
   height: auto;
 }
 
-/* SVG dividers */
+/* dividers */
 
 .divider {
   border-radius: 10px;
   box-shadow: 0 0 10px #2cb67d, 0 0 20px #2cb67d, 0 0 40px #2cb67d,
     0 0 80px #2cb67d, 0 0 120px #2cb67d;
+}
+
+/* Project subtitle scaling font size */
+
+@media only screen and (min-width: 768px) and (max-width: 1060px) {
+  .project-sub {
+    font-size: 1.5vmin;
+  }
 }
 
 /* .spacer {

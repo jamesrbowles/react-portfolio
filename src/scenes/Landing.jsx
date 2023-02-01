@@ -22,7 +22,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
         pathLength: 1,
         opacity: 1,
         transition: {
-          pathLength: { type: "spring", duration: 1.5, bounce: 0 },
+          pathLength: { type: "spring", duration: 2.5, bounce: 0 },
           opacity: { duration: 0.01 },
         },
       };
@@ -43,7 +43,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <p className="text-9xl font-leagueSpartan z-10 text-center uppercase font-extrabold">
+          <p className="text-7xl sm:text-8xl md:text-9xl font-leagueSpartan z-10 text-center uppercase font-extrabold">
             Developer
           </p>
         </motion.div>
@@ -61,7 +61,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <p className="mt-10 mb-7 text-xl text-center text-grey font-montserrat">
+          <p className="text-base sm:text-lg md:text-xl mt-10 mb-7 text-center text-grey font-montserrat">
             Front-end engineer specialising in JavaScript and ReactJS. Take a
             deep dive into my portfolio to learn a little more.
           </p>
@@ -70,7 +70,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
         {/* CALL TO ACTIONS */}
         <div className="w-1/2 mx-auto z-10">
           <motion.div
-            className="flex mt-5 gap-3 justify-center"
+            className="flex mt-5 justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -89,8 +89,8 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
               Contact Me
             </AnchorLink> */}
             <AnchorLink
-              className="basis-1/2 rounded-sm py-3 px-7
-                transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-white hover:text-dark-grey/75 font-leagueSpartan text-2xl text-center font-semibold tracking-wider"
+              className="text-xl md:text-2xl basis-1/2 rounded-sm py-3 md:px-7 px-16
+                transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-white hover:text-dark-grey/75 font-leagueSpartan text-center font-semibold tracking-wider"
               onClick={handleProjectsBtn}
               href="#projects"
             >

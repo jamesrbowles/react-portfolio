@@ -16,18 +16,21 @@ const projectVariant = {
 };
 
 const Project = ({ title, subtitle, href }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+  const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-4 md:p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div
+      variants={projectVariant}
+      className="relative max-w-[400px] max-h-[400px]"
+    >
       <a href={href} target="_blank">
         <div className={overlayStyles}>
           <p className="text-2xl font-montserrat">{title}</p>
-          <p className="mt-7">{subtitle}</p>
+          <p className="mt-7 project-sub">{subtitle}</p>
         </div>
-        <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+        <img src={`../assets/${projectTitle}.jpg`} alt={projectTitle} />
       </a>
     </motion.div>
   );
@@ -49,14 +52,14 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-montserrat font-semibold text-4xl">
+          <p className="font-leagueSpartan font-semibold sm:text-5xl text-4xl">
             <span className="text-red">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
+        <p className="mt-10 mb-10 font-montserrat text-center">
           My projects are characterized by their attention to detail and
           user-centered approach. Browse below at some of my completed and
           ongoing work.
@@ -74,7 +77,7 @@ const Projects = () => {
         >
           {/* ROW 1 */}
           <div
-            className="flex justify-center text-center items-center p-10 bg-red
+            className="flex justify-center text-center items-center p-10 bg-purple
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
           >
             BEAUTIFUL USER INTERFACES
@@ -84,18 +87,38 @@ const Projects = () => {
             subtitle="This is a task app that focuses on priority built with React. As the user adds a task it gets added to the forefront of a deck of previously added tasks."
             href="https://jamesrbowles.github.io/deckr/"
           />
-          <Project title="Project 2" />
+          <Project
+            title="Weather App"
+            subtitle="Weather app built with vanilla JavaScript."
+            href="https://jamesrbowles.github.io/JS-Weather-App/"
+          />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project
+            title="Color Game"
+            subtitle=""
+            href="https://jamesrbowles.github.io/Guess-The-Color/"
+          />
+          <Project
+            title="Password Generator"
+            subtitle="Unique password generator app"
+            href="https://jamesrbowles.github.io/Password-Generator/"
+          />
+          <Project
+            title="Quote Machine"
+            subtitle="Random famous quote generator app"
+            href="https://jamesrbowles.github.io/random-quote-machine/"
+          />
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
+          <Project
+            title="Portfolio"
+            subtitle="My personal portfolio built with React"
+            href=""
+          />
           <Project title="Project 7" />
           <div
-            className="flex justify-center text-center items-center p-10 bg-blue
+            className="flex justify-center text-center items-center p-10 bg-green
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
           >
             SMOOTH USER EXPERIENCE

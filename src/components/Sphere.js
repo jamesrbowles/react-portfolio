@@ -9,7 +9,7 @@ const AnimatedSphere = () => {
         color="#2cb67d"
         attach="material"
         distort={0.3}
-        speed={1.5}
+        speed={1.8}
       />
     </Sphere>
   );

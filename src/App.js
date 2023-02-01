@@ -90,7 +90,8 @@ function App() {
         </motion.div>
       </div>
 
-      <div className="w-full h-0.5"></div>
+      {/*  DIVIDER */}
+      <div className="w-11/12 h-1 mx-auto bg-green divider"></div>
 
       {/* SKILLS */}
       <div className="mx-auto md:h-full relative z-10">

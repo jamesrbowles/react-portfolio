@@ -5,10 +5,11 @@ import useMediaQuery from "../hooks/useMediaQuery";
 // selected page and individual link styling
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
+
   return (
     <AnchorLink
       className={`${selectedPage === lowerCasePage ? "text-green" : ""}
-      hover:text-green transition duration-500`}
+      hover:text-green transition duration-500 fancy word`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -32,7 +33,9 @@ const Navbar = ({
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <img src="../assets/logo-white.png" alt="logo" className="h-10" />
+        <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
+          <img src="../assets/logo-white.png" alt="logo" className="h-10" />
+        </AnchorLink>
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
@@ -59,7 +62,7 @@ const Navbar = ({
 
         {/*  MOBILE MENU POPUP */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-bg-shade w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
