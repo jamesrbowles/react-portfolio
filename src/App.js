@@ -104,7 +104,8 @@ function App() {
         </motion.div>
       </div>
 
-      <div className="w-full h-0.5"></div>
+      {/*  DIVIDER */}
+      <div className="w-11/12 h-1 mx-auto bg-green divider"></div>
 
       {/*   TESTIMONIALS SECTION */}
       {/*            <div className="w-5/6 mx-auto md:h-full">
@@ -126,15 +127,14 @@ function App() {
           <Contact />
         </motion.div>
       </div>
-      <div className="fixed bottom-0 left-5 z-50">
+      <div className="fixed bottom-7 left-4 z-50">
         <motion.div
-          /*      className="flex mt-5 justify-center md:justify-start" */
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.4, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
+            hidden: { opacity: 0, x: -5 },
             visible: { opacity: 1, x: 0 },
           }}
         >

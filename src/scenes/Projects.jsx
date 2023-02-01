@@ -53,7 +53,7 @@ const Projects = () => {
       >
         <div>
           <p className="font-leagueSpartan font-semibold sm:text-5xl text-4xl">
-            <span className="text-red">PRO</span>JECTS
+            PROJECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />

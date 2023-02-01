@@ -2,12 +2,12 @@ import { FaGithub } from "react-icons/fa";
 
 const SocialMediaIcons = () => {
   return (
-    <div className="flex justify-center md:justify-start my-8 gap-7">
+    <div className="">
       <a
         href="https://github.com/jamesrbowles"
         target="_blank"
         rel="noreferrer"
-        className="hover:opacity-50 transition duration-500 text-4xl"
+        className="opacity-50 hover:opacity-100 transition duration-500 text-4xl"
       >
         <FaGithub />
       </a>
