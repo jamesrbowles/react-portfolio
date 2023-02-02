@@ -11,6 +11,12 @@ module.exports = {
         purple: "#7f5af0",
         "dark-grey": "#242629",
         "bg-shade": "#121315",
+        react: "#61DBFB",
+        javascript: "#F0DB4F",
+        css: "#2965f1",
+        html: "#f06529",
+        node: "#3c873a",
+        tailwind: "#3490dc",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":

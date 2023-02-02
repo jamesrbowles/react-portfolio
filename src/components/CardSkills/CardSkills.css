@@ -1,0 +1,86 @@
+.skill-card {
+  border-radius: 1vmin;
+  position: absolute;
+  aspect-ratio: 5 / 7;
+  width: 30vmin;
+  margin: 3em auto;
+  transition: all 800ms cubic-bezier(0.09, 0.72, 0.33, 0.84);
+  cursor: pointer;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  box-shadow: -1px 1px 20px rgb(0, 0, 0);
+  z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .skill-card {
+    width: 37.5vmin;
+  }
+}
+
+/* .task-text-spread {
+  width: 80%;
+  word-wrap: break-word;
+  margin: 0em 1em 1em 1em;
+  overflow: scroll;
+  font-size: 1vmin;
+}
+ */
+
+/* Task spread styling */
+
+.skill-card-size-fan {
+  width: 20vmin;
+  top: -20%;
+  left: 15%;
+}
+
+@media screen and (max-width: 500px) {
+  .task-card-size-fan {
+    width: 19vmin;
+    top: -72%;
+    left: -14%;
+  }
+}
+
+.each-card:nth-last-child(1) .skill-fan {
+  transform: translate(0%, -9%) rotate(0deg) !important;
+}
+
+.each-card:nth-last-child(2) .skill-fan {
+  transform: translate(-91%, 24%) rotate(-51.43deg) !important;
+}
+
+.each-card:nth-last-child(3) .skill-fan {
+  transform: translate(-111%, 92%) rotate(-102.85deg) !important;
+}
+
+.each-card:nth-last-child(4) .skill-fan {
+  transform: translate(-51%, 146%) rotate(-154.29deg) !important;
+}
+
+.each-card:nth-last-child(5) .skill-fan {
+  transform: translate(51%, 146%) rotate(-205.72deg) !important;
+}
+
+.each-card:nth-last-child(6) .skill-fan {
+  transform: translate(111%, 92%) rotate(-257.15deg) !important;
+}
+
+.each-card:nth-last-child(7) .skill-fan {
+  transform: translate(91%, 24%) rotate(-308.158deg) !important;
+}
+
+/* this was used as a guide to set the stagger correctly on fan  */
+/* .center-line {
+  width: 5px;
+  height: 23px;
+  background-color: yellow;
+  position: absolute;
+  top: 95.5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 5;
+} */

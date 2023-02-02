@@ -42,7 +42,7 @@ line {
   height: auto;
 }
 
-/* dividers */
+/* Dividers */
 
 .divider {
   border-radius: 10px;
@@ -58,35 +58,35 @@ line {
   }
 }
 
-/* .spacer {
-  aspect-ratio: 960/75;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+/* Skill cards */
+
+.skills-container {
+  height: 50vh;
+  width: 30vmin;
+  position: relative;
+  margin: 8em auto 6em auto;
+}
+
+.task-container-fan {
+  width: 20vmin !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-container {
+    margin: 4em auto 2em auto;
+  }
+}
+
+/* Circle guide on skills fan */
+/* .added-plus2 {
+  width: 170px;
+  height: 170px;
+  border: 2px solid green;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.reverse {
-  top: 0 !important;
-}
-
-.layer1 {
-  background-image: url("../public/assets/layered-waves.svg");
-}
-
-.layer2 {
-  background-image: url("../public/assets/layered-peaks.svg");
-}
-
-.layer3 {
-  background-image: url("../public/assets/layered-waves2.svg");
-}
-
-.layer4 {
-  background-image: url("../public/assets/layered-waves-reverse.svg");
-}
- */
+  top: 65.5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 5;
+} */

@@ -25,11 +25,17 @@ function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const [projectsBtnActive, setProjectsBtnActive] = useState(false);
+  const [skillFan, setSkillFan] = useState(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
+  /*   Function for activating Projects line animation */
   const handleProjectsBtn = () => {
     setProjectsBtnActive(true);
     setSelectedPage("projects");
+  };
+
+  const handleSkillFan = () => {
+    setSkillFan(!skillFan);
   };
 
   /*   Logic for navbar if user at top of screen */
@@ -100,23 +106,14 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("skills")}
         >
-          <MySkills />
+          <MySkills skillFan={skillFan} handleSkillFan={handleSkillFan} />
         </motion.div>
+        {/*  guide for fan on skills */}
+        {/* <div className="added-plus2"></div> */}
       </div>
 
       {/*  DIVIDER */}
       <div className="w-11/12 h-1 mx-auto bg-green divider"></div>
-
-      {/*   TESTIMONIALS SECTION */}
-      {/*            <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
-        >
-          <Testimonials />
-        </motion.div>
-      </div> */}
 
       <div className="w-5/6 mx-auto md:h-screen">
         <motion.div

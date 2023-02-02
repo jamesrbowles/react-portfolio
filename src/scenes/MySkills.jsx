@@ -1,19 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
-import TextSphere from "../components/TextSphere";
 
 // hooks
 import useMediaQuery from "../hooks/useMediaQuery";
 
 // custom components
 import LineGradient from "../components/LineGradient";
+import CardSkills from "../components/CardSkills/CardSkills";
 
-const MySkills = () => {
+// skills
+import skills from "../components/CardSkills/skills";
+
+const MySkills = ({ skillFan, handleSkillFan }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
   return (
-    <section id="skills" className="py-10 md:h-full mx-24 z-10">
+    <section id="skills" className="sm:flex py-10 md:h-full mx-24 z-10">
       {/*  HEADER AND IMAGE SECTION */}
-      <div className="md:flex text-center md:justify-between md:gap-16 mt-32">
+      <div className="basis-1/3 text-center mt-16">
         <motion.div
           className="w-full"
           initial="hidden"
@@ -38,12 +42,38 @@ const MySkills = () => {
         </motion.div>
       </div>
       {/* SKILLS */}
-      <div>
-        <TextSphere />
+      <div
+        className={
+          skillFan
+            ? "skills-container skills-container-fan"
+            : "skills-container"
+        }
+      >
+        {skills.map((skill) => {
+          const { name, img, logoColor, bgColor } = skill;
+          return (
+            <CardSkills
+              key={name}
+              name={name}
+              img={img}
+              logoColor={logoColor}
+              bgColor={bgColor}
+              skillFan={skillFan}
+              handleSkillFan={handleSkillFan}
+            />
+          );
+        })}
       </div>
-      {/*       <div className="md:flex md:justify-between mt-16 gap-32"> */}
-      {/* EXPERIENCE */}
-      {/*      <motion.div
+    </section>
+  );
+};
+
+export default MySkills;
+
+{
+  /*  <div className="md:flex md:justify-between mt-16 gap-32"> 
+       EXPERIENCE 
+        <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -68,10 +98,9 @@ const MySkills = () => {
             issues, with a robust sense of determination and ability to never
             give up until finding a solution.
           </p>
-        </motion.div> */}
-
-      {/* INNOVATIVE */}
-      {/*         <motion.div
+        </motion.div>
+        INNOVATIVE 
+        <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -96,10 +125,9 @@ const MySkills = () => {
             morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
             odio sit sagittis,
           </p>
-        </motion.div> */}
-
-      {/* IMAGINATIVE */}
-      {/*         <motion.div
+        </motion.div>
+       IMAGINATIVE 
+        <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -123,10 +151,6 @@ const MySkills = () => {
             Excellent communication skills with the ability to work well in a
             team.
           </p>
-        </motion.div> */}
-      {/*   </div> */}
-    </section>
-  );
-};
-
-export default MySkills;
+        </motion.div>
+      </div> */
+}
