@@ -25,8 +25,8 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, y: -50 },
-            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
           }}
         >
           <p className="font-leagueSpartan font-semibold sm:text-5xl text-4xl">
@@ -49,6 +49,7 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
         </motion.div>
       </div>
       {/* SKILLS */}
+
       <div
         className={
           skillFan
@@ -56,20 +57,32 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
             : "skills-container"
         }
       >
-        {skills.map((skill) => {
-          const { name, img, logoColor, bgColor } = skill;
-          return (
-            <CardSkills
-              key={name}
-              name={name}
-              img={img}
-              logoColor={logoColor}
-              bgColor={bgColor}
-              skillFan={skillFan}
-              handleSkillFan={handleSkillFan}
-            />
-          );
-        })}
+        <motion.div
+          className="w-full"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          {skills.map((skill) => {
+            const { name, img, logoColor, bgColor } = skill;
+            return (
+              <CardSkills
+                key={name}
+                name={name}
+                img={img}
+                logoColor={logoColor}
+                bgColor={bgColor}
+                skillFan={skillFan}
+                handleSkillFan={handleSkillFan}
+              />
+            );
+          })}
+        </motion.div>
       </div>
     </section>
   );

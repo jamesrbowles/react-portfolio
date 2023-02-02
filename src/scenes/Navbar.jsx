@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { FaTimes } from "react-icons/fa";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 // selected page and individual link styling
@@ -9,7 +10,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   return (
     <AnchorLink
       className={`${selectedPage === lowerCasePage ? "text-green" : ""}
-      hover:text-green transition duration-500 fancy word`}
+      hover:text-green transition duration-500 fancy word font-leagueSpartan`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -39,7 +40,7 @@ const Navbar = ({
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
-          <div className="flex justify-between gap-16 font-leagueSpartan text-xl font-semibold capitalize">
+          <div className="flex justify-between gap-16  text-xl font-semibold capitalize">
             {pageSections.map((page) => {
               return (
                 <Link
@@ -66,7 +67,7 @@ const Navbar = ({
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img src="../assets/close-icon.svg" alt="close-icon" />
+                <FaTimes className="text-2xl hover:opacity-50" />
               </button>
             </div>
             {/* MENU ITEMS */}

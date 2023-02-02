@@ -80,14 +80,6 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            {/*             <AnchorLink
-              className="basis-1/2 rounded-sm py-3 px-7
-                transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-grey hover:text-dark-grey text-center font-bold"
-              onClick={() => setSelectedPage("contact")}
-              href="#contact"
-            >
-              Contact Me
-            </AnchorLink> */}
             <AnchorLink
               className="text-xl md:text-2xl basis-1/2 rounded-sm py-3 md:px-7 px-16
                 transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-white hover:text-dark-grey/75 font-leagueSpartan text-center font-semibold tracking-wider"
@@ -141,25 +133,3 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
 };
 
 export default Landing;
-
-/*    {
-     projectsBtnActive && (
-       <motion.svg
-         className="project-line"
-         width="20"
-         height="610"
-         viewBox="0 0 20 610"
-         initial="hidden"
-         animate="visible"
-       >
-         <motion.line
-           x1="10"
-           y1="0"
-           x2="10"
-           y2="600"
-           stroke="#2cb67d"
-           variants={draw}
-         />
-       </motion.svg>
-     );
-   } */

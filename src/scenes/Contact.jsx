@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-36">
+    <section id="contact" className="pt-24">
       {/* HEADINGS */}
       <motion.div
         className="flex justify-end w-full"
@@ -31,8 +31,8 @@ const Contact = () => {
         }}
       >
         <div>
-          <p className="font-montserrat font-semibold text-4xl">
-            <span className="text-green">CONTACT ME</span> TO GET STARTED
+          <p className="font-leagueSpartan font-semibold sm:text-5xl text-4xl">
+            <span className="text-green">GET IN</span> TOUCH
           </p>
 
           <div className="flex md:justify-end my-5">
@@ -71,11 +71,11 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/jamesrbowles@gmail.com"
+            action="https://formsubmit.co/bbac15d4813f8e4bb1f41f54b271307b"
             method="POST"
           >
             <input
-              className="w-full bg-slate-50 font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-bg-shade font-montserrat font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="Name"
               {...register("name", {
@@ -92,7 +92,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-slate-50 font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-bg-shade font-montserrat font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="Email"
               {...register("email", {
@@ -107,7 +107,7 @@ const Contact = () => {
               </p>
             )}
             <textarea
-              className="w-full bg-slate-50 font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-bg-shade font-montserrat font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="Message"
               rows="4"
@@ -124,13 +124,14 @@ const Contact = () => {
                   "Max length is 2000 characters."}
               </p>
             )}
-
-            <button
-              type="submit"
-              className="p-5 bg-green font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
-            >
-              SEND ME A MESSAGE
-            </button>
+            <div className="flex justify-center md:justify-start">
+              <button
+                type="submit"
+                className="py-3 md:px-7 px-16 rounded-sm border-2 font-leagueSpartan text-xl md:text-2xl border-bg-shade bg-dark-grey hover:bg-white font-semibold hover:text-dark-grey/75 mt-5 hover:bg-red hover:text-white transition duration-500 tracking-wider text-center"
+              >
+                SEND ME A MESSAGE
+              </button>
+            </div>
           </form>
         </motion.div>
       </div>
