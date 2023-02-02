@@ -35,9 +35,16 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />
           </div>
-          <p className="mt-10 ">
-            Characteristics and soft-skills apart from having a solid grasp of
-            various front-end languages and frameworks.
+          <p className="text-center font-montserrat sm:text-left mt-10 ">
+            As a constantly evolving self-taught web developer I have managed to
+            acquire a number of skills in various different front-end languages
+            and frameworks.
+            <br></br>
+            <br></br>
+            However apart from this knowledge, I have strong problem-solving
+            skills and the ability to troubleshoot complex issues, with a robust
+            sense of determination and ability to never give up until finding a
+            solution.
           </p>
         </motion.div>
       </div>
