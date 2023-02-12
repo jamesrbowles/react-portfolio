@@ -1,19 +1,19 @@
-import React from "react";
-import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import React from 'react';
+import { motion } from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
 
 //hooks
-import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQuery from '../hooks/useMediaQuery';
 
 //custom components
-import SocialMediaIcons from "../components/SocialMediaIcons";
-import Sphere from "../components/Sphere";
-import Sphere2 from "../components/Sphere2";
+import SocialMediaIcons from '../components/SocialMediaIcons';
+import Sphere from '../components/Sphere';
+import Sphere2 from '../components/Sphere2';
 
 const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
 
   const draw = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -22,7 +22,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
         pathLength: 1,
         opacity: 1,
         transition: {
-          pathLength: { type: "spring", duration: 2.5, bounce: 0 },
+          pathLength: { type: 'spring', duration: 2.5, bounce: 0 },
           opacity: { duration: 0.01 },
         },
       };
@@ -30,7 +30,10 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
   };
 
   return (
-    <section id="home" className="py-10 mx-24 h-screen relative">
+    <section
+      id="home"
+      className="py-10 sm:mx-24 mx-16 h-screen relative"
+    >
       {/*  HEADER SECTION */}
       <div className="relative top-1/4 w-full">
         <motion.div
@@ -116,7 +119,10 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
         <Canvas className="">
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0} />
-          <directionalLight position={[0, -10, -1]} intensity={0.9} />
+          <directionalLight
+            position={[0, -10, -1]}
+            intensity={0.9}
+          />
           <Sphere />
         </Canvas>
       </div>
@@ -124,7 +130,10 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
         <Canvas className="">
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0} />
-          <directionalLight position={[0, -10, -3]} intensity={0.9} />
+          <directionalLight
+            position={[0, -10, -3]}
+            intensity={0.9}
+          />
           <Sphere2 />
         </Canvas>
       </div>

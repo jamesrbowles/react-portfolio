@@ -1,5 +1,5 @@
-import LineGradient from "../components/LineGradient";
-import { motion } from "framer-motion";
+import LineGradient from '../components/LineGradient';
+import { motion } from 'framer-motion';
 
 const container = {
   hidden: {},
@@ -18,19 +18,25 @@ const projectVariant = {
 const Project = ({ title, subtitle, href }) => {
   const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-4 md:p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
+  const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
     <motion.div
       variants={projectVariant}
       className="relative max-w-[400px] max-h-[400px]"
     >
-      <a href={href} target="_blank">
+      <a
+        href={href}
+        target="_blank"
+      >
         <div className={overlayStyles}>
           <p className="text-2xl font-montserrat">{title}</p>
           <p className="mt-7 project-sub">{subtitle}</p>
         </div>
-        <img src={`../assets/${projectTitle}.jpg`} alt={projectTitle} />
+        <img
+          src={`../assets/${projectTitle}.jpg`}
+          alt={projectTitle}
+        />
       </a>
     </motion.div>
   );
@@ -38,7 +44,10 @@ const Project = ({ title, subtitle, href }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-24 pb-48 mx-24">
+    <section
+      id="projects"
+      className="pt-24 pb-48 sm:mx-24 mx-16"
+    >
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"

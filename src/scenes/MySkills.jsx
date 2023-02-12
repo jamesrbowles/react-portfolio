@@ -17,7 +17,7 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
   return (
     <section
       id="skills"
-      className="sm:flex py-10 md:h-full mx-24 z-10"
+      className="sm:flex py-10 md:h-full sm:mx-24 mx-16 z-10"
     >
       {/*  HEADER AND IMAGE SECTION */}
       <div className="basis-1/3 text-center mt-16">

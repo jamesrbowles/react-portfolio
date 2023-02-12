@@ -1,6 +1,6 @@
-import { useRef } from "react";
-import "./CardSkills.css";
-import skills from "./skills";
+import { useRef } from 'react';
+import './CardSkills.css';
+import skills from './skills';
 
 const CardSkills = ({
   name,
@@ -27,28 +27,28 @@ const CardSkills = ({
     <div className="each-card">
       <div
         className={
-          skillFan ? "skill-fan skill-card-size-fan skill-card" : "skill-card"
+          skillFan ? 'skill-fan skill-card-size-fan skill-card' : 'skill-card'
         }
         style={stagger.current}
         onClick={handleSkillFan}
       >
-        <div className="flex flex-col justify-around">
+        <div className="flex flex-col justify-around w-full">
           <h3
             className={
               skillFan
-                ? "mx-auto text-m xs:text-2xl sm:text-3xl md:text-4xl "
-                : "mx-auto text-3xl sm:text-4xl md:text-5xl"
+                ? 'mx-auto text-m xs:text-2xl sm:text-3xl md:text-4xl'
+                : 'mx-auto text-3xl sm:text-4xl md:text-5xl'
             }
             style={{ color: `${logoColor}` }}
           >
             {name}
           </h3>
-          <div className="center-line"></div>
+          {/*  <div className="center-line"></div> */}
           <div
             className={
               skillFan
-                ? "mx-auto text-5xl sm:text-6xl md:text-7xl"
-                : "mx-auto text-7xl sm:text-8xl md:text-9xl"
+                ? 'mx-auto text-5xl sm:text-6xl md:text-7xl'
+                : 'mx-auto text-7xl sm:text-8xl md:text-9xl'
             }
             style={{ color: `${logoColor}` }}
           >
