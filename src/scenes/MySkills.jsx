@@ -1,21 +1,24 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 // hooks
-import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQuery from '../hooks/useMediaQuery';
 
 // custom components
-import LineGradient from "../components/LineGradient";
-import CardSkills from "../components/CardSkills/CardSkills";
+import LineGradient from '../components/LineGradient';
+import CardSkills from '../components/CardSkills/CardSkills';
 
 // skills
-import skills from "../components/CardSkills/skills";
+import skills from '../components/CardSkills/skills';
 
 const MySkills = ({ skillFan, handleSkillFan }) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
 
   return (
-    <section id="skills" className="sm:flex py-10 md:h-full mx-24 z-10">
+    <section
+      id="skills"
+      className="sm:flex py-10 md:h-full mx-24 z-10"
+    >
       {/*  HEADER AND IMAGE SECTION */}
       <div className="basis-1/3 text-center mt-16">
         <motion.div
@@ -41,10 +44,10 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
             and frameworks.
             <br></br>
             <br></br>
-            However apart from this knowledge, I have strong problem-solving
-            skills and the ability to troubleshoot complex issues, with a robust
-            sense of determination and ability to never give up until finding a
-            solution.
+            However apart from this technical know-how, I have strong
+            problem-solving skills and the ability to troubleshoot complex
+            issues, with a robust sense of determination and ability to never
+            give up until finding the right solution.
           </p>
         </motion.div>
       </div>
@@ -53,8 +56,8 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
       <div
         className={
           skillFan
-            ? "skills-container skills-container-fan"
-            : "skills-container"
+            ? 'skills-container skills-container-fan'
+            : 'skills-container'
         }
       >
         <motion.div

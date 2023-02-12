@@ -1,6 +1,6 @@
-import LineGradient from "../components/LineGradient";
-import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
+import LineGradient from '../components/LineGradient';
+import { motion } from 'framer-motion';
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
   const {
@@ -17,7 +17,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-24">
+    <section
+      id="contact"
+      className="pt-24"
+    >
       {/* HEADINGS */}
       <motion.div
         className="flex justify-end w-full"
@@ -54,7 +57,11 @@ const Contact = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img
+            className="saturate-100 hover:saturate-50 object-contain max-w-lg rounded-sm min-w-0"
+            src="../assets/unnamed.jpg"
+            alt="contact"
+          />
         </motion.div>
 
         <motion.div
@@ -78,16 +85,16 @@ const Contact = () => {
               className="w-full bg-bg-shade font-montserrat font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="Name"
-              {...register("name", {
+              {...register('name', {
                 required: true,
                 maxLength: 100,
               })}
             />
             {errors.name && (
               <p className="text-red mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" &&
-                  "Max length is 100 characters."}
+                {errors.name.type === 'required' && 'This field is required.'}
+                {errors.name.type === 'maxLength' &&
+                  'Max length is 100 characters.'}
               </p>
             )}
 
@@ -95,15 +102,15 @@ const Contact = () => {
               className="w-full bg-bg-shade font-montserrat font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="Email"
-              {...register("email", {
+              {...register('email', {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               })}
             />
             {errors.email && (
               <p className="text-red mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "pattern" && "Invalid email address."}
+                {errors.name.type === 'required' && 'This field is required.'}
+                {errors.name.type === 'pattern' && 'Invalid email address.'}
               </p>
             )}
             <textarea
@@ -112,22 +119,22 @@ const Contact = () => {
               placeholder="Message"
               rows="4"
               cols="50"
-              {...register("message", {
+              {...register('message', {
                 required: true,
                 maxLength: 2000,
               })}
             />
             {errors.message && (
               <p className="text-red mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" &&
-                  "Max length is 2000 characters."}
+                {errors.name.type === 'required' && 'This field is required.'}
+                {errors.name.type === 'maxLength' &&
+                  'Max length is 2000 characters.'}
               </p>
             )}
             <div className="flex justify-center md:justify-start">
               <button
                 type="submit"
-                className="py-3 md:px-7 px-16 rounded-sm border-2 font-leagueSpartan text-xl md:text-2xl border-bg-shade bg-dark-grey hover:bg-white font-semibold hover:text-dark-grey/75 mt-5 hover:bg-red hover:text-white transition duration-500 tracking-wider text-center"
+                className="py-3 md:px-7 px-16 rounded-sm border-2 font-leagueSpartan text-xl md:text-2xl border-bg-shade bg-dark-grey font-semibold mt-5 hover:bg-white hover:text-dark-grey/75 transition duration-500 tracking-wider text-center "
               >
                 SEND ME A MESSAGE
               </button>
