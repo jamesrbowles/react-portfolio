@@ -28,13 +28,15 @@ const Project = ({ title, subtitle, href }) => {
       <a
         href={href}
         target="_blank"
+        rel="noreferrer"
       >
         <div className={overlayStyles}>
           <p className="text-2xl font-montserrat">{title}</p>
           <p className="mt-7 project-sub">{subtitle}</p>
         </div>
         <img
-          src={`../assets/${projectTitle}.jpg`}
+          /* src={`../assets/${projectTitle}.jpg`} */
+          src={`${process.env.PUBLIC_URL + '/assets/' + projectTitle + '.jpg'}`}
           alt={projectTitle}
         />
       </a>

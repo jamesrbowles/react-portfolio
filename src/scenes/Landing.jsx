@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import Typewriter from 'typewriter-effect';
 
 //hooks
 import useMediaQuery from '../hooks/useMediaQuery';
@@ -46,9 +47,27 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <p className="text-7xl sm:text-8xl md:text-9xl font-leagueSpartan z-10 text-center uppercase font-extrabold">
+          <div className="text-5xl xs:text-6xl ss:text-7xl md:text-8xl font-leagueSpartan z-10 text-center uppercase font-extrabold">
+            <span>I'm a</span>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString('Developer')
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .typeString('Freelancer')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              }}
+              options={{
+                loop: true,
+              }}
+            />
+          </div>
+          {/*      <p className="text-7xl sm:text-8xl md:text-9xl font-leagueSpartan z-10 text-center uppercase font-extrabold">
             Developer
-          </p>
+          </p> */}
         </motion.div>
       </div>
 

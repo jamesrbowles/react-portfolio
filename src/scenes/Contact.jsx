@@ -74,7 +74,7 @@ const Contact = () => {
         >
           <img
             className="saturate-0 object-contain max-w-lg rounded-md min-w-0"
-            src="../assets/unnamed.jpg"
+            src={`${process.env.PUBLIC_URL + '/assets/unnamed.jpg'}`}
             alt="contact"
           />
         </motion.div>
