@@ -85,7 +85,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
           >
             <AnchorLink
               className="text-xl md:text-2xl basis-1/2 rounded-sm py-3 md:px-7 px-16
-                transition duration-500 border-2 border-bg-shade bg-dark-grey hover:bg-white hover:text-dark-grey/75 font-leagueSpartan text-center font-semibold tracking-wider"
+                transition duration-500 border-2 border-green/50 bg-dark-grey hover:bg-bg-shade hover:border-green active:bg-bg-shade active:border-green font-leagueSpartan text-center font-semibold tracking-wider uppercase"
               onClick={handleProjectsBtn}
               href="#projects"
             >
@@ -115,7 +115,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
       </div>
 
       {/*  SPHERE SECTION */}
-      <div className="absolute right-5 bottom-1 h-60 w-[200px]">
+      <div className="absolute right-5 bottom-2 h-60 w-[200px]">
         <Canvas className="">
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0} />
@@ -126,7 +126,7 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
           <Sphere />
         </Canvas>
       </div>
-      <div className="absolute left-16 bottom-36 w-[100px]">
+      <div className="absolute left-16 bottom-40 w-[100px]">
         <Canvas className="">
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0} />

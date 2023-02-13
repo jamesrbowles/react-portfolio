@@ -47,7 +47,10 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
             However apart from this technical know-how, I have strong
             problem-solving skills and the ability to troubleshoot complex
             issues, with a robust sense of determination and ability to never
-            give up until finding the right solution.
+            give up until finding the right way forward.
+            <br></br>
+            <br></br>
+            The bottom line is whatever your problem, I'll get to the solution.
           </p>
         </motion.div>
       </div>

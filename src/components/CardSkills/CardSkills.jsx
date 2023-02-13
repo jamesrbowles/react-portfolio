@@ -10,7 +10,6 @@ const CardSkills = ({
   skillFan,
   handleSkillFan,
 }) => {
-  console.log(bgColor);
   const translateX =
     Math.floor(Math.random() * 18) * (Math.round(Math.random()) ? 1 : -1);
   const translateY =

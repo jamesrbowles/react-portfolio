@@ -90,3 +90,67 @@ line {
   border-radius: 50%;
   z-index: 5;
 } */
+
+/* Contact form styling */
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 1.8em;
+
+  &__label {
+    position: absolute;
+    left: 3em;
+    top: -0.28em;
+    background: #242629;
+    padding: 0 0.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    letter-spacing: 0.1em;
+  }
+
+  &__input {
+    font-size: 1.25rem;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#242629, #242629),
+      linear-gradient(120deg, #94a1b2 0%, #7f5af0 50%, #2cb67d 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 0.5em;
+    background-size: 200% 100%;
+    transition: background-position 0.8s ease-out;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+}
+
+.test {
+  border: 0.15em solid transparent;
+  background-image: linear-gradient(#242629, #242629),
+    linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 0.4em;
+  background-size: 200% 100%;
+  transition: background-position 0.8s ease-out;
+
+  &:hover {
+    background-position: 100% 0;
+  }
+  &:focus {
+    background-position: 100% 0;
+  }
+}
+
+/* Green hex #2cb67d */
