@@ -125,9 +125,9 @@ const Projects = () => {
           <Project
             title="Portfolio"
             subtitle="My personal portfolio built with React"
-            href=""
+            href="https://jamesrbowles.github.io/react-portfolio/"
           />
-          <Project title="Project 7" />
+          <Project title="Project Admin" />
           <div
             className="flex justify-center text-center items-center p-10 bg-green
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
