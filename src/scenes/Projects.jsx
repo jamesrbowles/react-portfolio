@@ -96,7 +96,7 @@ const Projects = () => {
           <Project
             title="deckr"
             subtitle="This is a task app that focuses on priority built with React. As the user adds a task it gets added to the forefront of a deck of previously added tasks."
-            href="https://jamesrbowles.github.io/deckr/"
+            href="https://deckr.netlify.app/"
           />
           <Project
             title="Weather App"
