@@ -99,26 +99,26 @@ const Projects = () => {
             href="https://deckr.netlify.app/"
           />
           <Project
-            title="Weather App"
-            subtitle="Weather app built with vanilla JavaScript."
-            href="https://jamesrbowles.github.io/JS-Weather-App/"
+            title="Real Estate - Strapi"
+            subtitle="Real Estate app built with React and using Strapi for the headless CMS."
+            href="https://github.com/jamesrbowles/Strapi-Real-Estate"
           />
 
           {/* ROW 2 */}
+          <Project
+            title="Homeland - Real Estate"
+            subtitle="Frontend Real Estate app built with React and Tailwind."
+            href="https://github.com/jamesrbowles/homeland-realestate"
+          />
           <Project
             title="Color Game"
             subtitle=""
             href="https://jamesrbowles.github.io/Guess-The-Color/"
           />
           <Project
-            title="Password Generator"
-            subtitle="Unique password generator app"
-            href="https://jamesrbowles.github.io/Password-Generator/"
-          />
-          <Project
-            title="Quote Machine"
-            subtitle="Random famous quote generator app"
-            href="https://jamesrbowles.github.io/random-quote-machine/"
+            title="Weather App"
+            subtitle="Weather app built with vanilla JavaScript."
+            href="https://jamesrbowles.github.io/JS-Weather-App/"
           />
 
           {/* ROW 3 */}
@@ -127,7 +127,11 @@ const Projects = () => {
             subtitle="My personal portfolio built with React"
             href="https://jamesrbowles.github.io/react-portfolio/"
           />
-          <Project title="Project Admin" />
+          <Project
+            title="Password Generator"
+            subtitle="Unique password generator app"
+            href="https://jamesrbowles.github.io/Password-Generator/"
+          />
           <div
             className="flex justify-center text-center items-center p-10 bg-green
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
