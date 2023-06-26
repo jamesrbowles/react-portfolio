@@ -94,14 +94,14 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
           <Project
+            title="Vanguard Property"
+            subtitle="Full stack real estate website with headless CMS. Built with Next.js and Strapi as the headless CMS"
+            href="https://vanguard-property.vercel.app/"
+          />
+          <Project
             title="deckr"
             subtitle="This is a task app that focuses on priority built with React. As the user adds a task it gets added to the forefront of a deck of previously added tasks."
             href="https://deckr.netlify.app/"
-          />
-          <Project
-            title="Real Estate - Strapi"
-            subtitle="Real Estate app built with React and using Strapi for the headless CMS."
-            href="https://github.com/jamesrbowles/Strapi-Real-Estate"
           />
 
           {/* ROW 2 */}
@@ -111,22 +111,18 @@ const Projects = () => {
             href="https://github.com/jamesrbowles/homeland-realestate"
           />
           <Project
-            title="Color Game"
-            subtitle=""
-            href="https://jamesrbowles.github.io/Guess-The-Color/"
+            title="Real Estate - Strapi"
+            subtitle="Real Estate App built with React with Strapi for the Headless CMS"
+            href="https://github.com/jamesrbowles/Strapi-Real-Estate"
           />
-          <Project
-            title="Weather App"
-            subtitle="Weather app built with vanilla JavaScript."
-            href="https://jamesrbowles.github.io/JS-Weather-App/"
-          />
-
-          {/* ROW 3 */}
           <Project
             title="Portfolio"
             subtitle="My personal portfolio built with React"
             href="https://jamesrbowles.github.io/react-portfolio/"
           />
+
+          {/* ROW 3 */}
+
           <Project
             title="Password Generator"
             subtitle="Unique password generator app"
@@ -137,6 +133,12 @@ const Projects = () => {
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
           >
             SMOOTH USER EXPERIENCE
+          </div>
+          <div
+            className="flex justify-center text-center items-center p-10 bg-purple
+              max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
+          >
+            ABSOLUTE BESPOKE APPS
           </div>
         </motion.div>
       </div>

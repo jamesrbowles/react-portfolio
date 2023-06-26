@@ -10,7 +10,7 @@ module.exports = {
         grey: '#94a1b2',
         white: '#fffffe',
         purple: '#7f5af0',
-        'dark-grey': '#242629',
+        'dark-grey': '#393a3c',
         'bg-shade': '#121315',
         react: '#61DBFB',
         javascript: '#F0DB4F',

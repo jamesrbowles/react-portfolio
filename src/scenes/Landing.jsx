@@ -84,8 +84,9 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
           }}
         >
           <p className="text-base sm:text-lg md:text-xl mt-10 mb-7 text-center text-grey font-montserrat">
-            Front-end engineer specialising in JavaScript and ReactJS. Take a
-            deep dive into my portfolio to learn a little more.
+            Web developer specialising in Real Estate Websites with Next.js and
+            Strapi Headless. Take a deep dive into my portfolio to learn a
+            little more.
           </p>
         </motion.div>
 

@@ -5,7 +5,7 @@
   gap: 20px;
   align-items: center;
   min-height: 100vh;
-  background: #242629;
+  background: #393a3c;
 }
 
 .loader {
@@ -29,18 +29,18 @@
 }
 
 .loader:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 6px;
   left: 6px;
   right: 6px;
   bottom: 6px;
-  background: #242629;
+  background: #393a3c;
   border-radius: 50%;
   z-index: 1000;
 }
 .loader:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   left: 0px;

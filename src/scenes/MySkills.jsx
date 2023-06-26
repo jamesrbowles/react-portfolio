@@ -17,7 +17,7 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
   return (
     <section
       id="skills"
-      className="sm:flex py-10 md:h-full sm:mx-24 mx-16 z-10"
+      className="md:flex py-10 md:h-full md:mx-24 mx-16 z-10"
     >
       {/*  HEADER AND IMAGE SECTION */}
       <div className="basis-1/3 text-center mt-16">
@@ -39,18 +39,26 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
             <LineGradient width="w-1/3" />
           </div>
           <p className="text-center font-montserrat sm:text-left mt-10 ">
-            As a constantly evolving self-taught web developer I have managed to
-            acquire a number of skills in various different front-end languages
-            and frameworks.
+            As a Real Estate Web developer, I specialize in leveraging the
+            latest and most advanced technologies to create exceptional
+            websites. By utilizing Next.js and headless CMS platforms like
+            Strapi, I develop websites that are not only fast and scalable but
+            also highly secure. My focus on optimizing search engine performance
+            ensures that my websites consistently achieve a perfect 100 score in
+            SEO rankings.
             <br></br>
             <br></br>
-            However apart from this technical know-how, I have strong
-            problem-solving skills and the ability to troubleshoot complex
-            issues, with a robust sense of determination and ability to never
-            give up until finding the right way forward.
+            Beyond my technical expertise, I possess strong problem-solving
+            skills and excel at troubleshooting complex issues. I approach
+            challenges with a tenacious spirit, never giving up until I find the
+            optimal solution. This determination drives me to continuously seek
+            the right path forward, ensuring the success of every project I
+            undertake.
             <br></br>
             <br></br>
-            The bottom line is whatever your problem, I'll get to the solution.
+            In summary, I combine cutting-edge technology, meticulous
+            optimization, and unwavering problem-solving abilities to deliver
+            outstanding Real Estate websites that exceed expectations.
           </p>
         </motion.div>
       </div>
