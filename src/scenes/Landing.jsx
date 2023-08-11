@@ -6,15 +6,14 @@ import { OrbitControls } from '@react-three/drei';
 import Typewriter from 'typewriter-effect';
 
 //hooks
-import useMediaQuery from '../hooks/useMediaQuery';
+/* import useMediaQuery from '../hooks/useMediaQuery'; */
 
 //custom components
-import SocialMediaIcons from '../components/SocialMediaIcons';
 import Sphere from '../components/Sphere';
 import Sphere2 from '../components/Sphere2';
 
 const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
-  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
+  /*   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)'); */
 
   const draw = {
     hidden: { pathLength: 0, opacity: 0 },

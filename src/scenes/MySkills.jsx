@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // hooks
-import useMediaQuery from '../hooks/useMediaQuery';
+/* import useMediaQuery from '../hooks/useMediaQuery'; */
 
 // custom components
 import LineGradient from '../components/LineGradient';
@@ -12,7 +12,7 @@ import CardSkills from '../components/CardSkills/CardSkills';
 import skills from '../components/CardSkills/skills';
 
 const MySkills = ({ skillFan, handleSkillFan }) => {
-  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
+  /*   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)'); */
 
   return (
     <section

@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import './CardSkills.css';
-import skills from './skills';
 
 const CardSkills = ({
   name,

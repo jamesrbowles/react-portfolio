@@ -1,5 +1,4 @@
 import React from 'react';
-import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Footer = () => {
   return (
