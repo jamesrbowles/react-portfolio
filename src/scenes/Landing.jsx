@@ -52,10 +52,10 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString('Developer')
-                  .pauseFor(2500)
+                  .typeString('UI/UX')
+                  .pauseFor(800)
                   .deleteAll()
-                  .typeString('Freelancer')
+                  .typeString('Designer')
                   .pauseFor(2000)
                   .deleteAll()
                   .start();
@@ -84,9 +84,10 @@ const Landing = ({ setSelectedPage, handleProjectsBtn, projectsBtnActive }) => {
           }}
         >
           <p className="text-base sm:text-lg md:text-xl mt-10 mb-7 text-center text-grey font-montserrat">
-            Web developer specialising in Real Estate Websites with Next.js and
-            Strapi Headless. Take a deep dive into my portfolio to learn a
-            little more.
+            <span className="text-white font-bold">Robert Bailey</span>{' '}
+            <span className="mx-2">||</span>
+            Designing Seamless Experiences: Merging Creativity with User-Centric
+            Solutions
           </p>
         </motion.div>
 

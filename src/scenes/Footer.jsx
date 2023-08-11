@@ -1,5 +1,5 @@
-import React from "react";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import React from 'react';
+import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Footer = () => {
   return (
@@ -9,10 +9,10 @@ const Footer = () => {
 
         <div className="md:flex justify-center md:justify-between text-center">
           <p className="font-montserrat font-semibold text-2xl text-green">
-            JAMES BOWLES
+            ROBERT BAILEY
           </p>
           <p className="font-montserrat text-md text-green md:ml-4">
-            ©2023 BOWLES. All Rights Reserved.
+            ©2023 BAILEY. All Rights Reserved.
           </p>
         </div>
       </div>

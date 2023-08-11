@@ -94,51 +94,51 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
           <Project
-            title="Vanguard Property"
-            subtitle="Full stack real estate website with headless CMS. Built with Next.js and Strapi as the headless CMS"
-            href="https://vanguard-property.vercel.app/"
+            title="Smart Home App"
+            subtitle="Intuitive interface for controlling and managing modern smart home devices."
+            href="/"
           />
           <Project
-            title="deckr"
-            subtitle="This is a task app that focuses on priority built with React. As the user adds a task it gets added to the forefront of a deck of previously added tasks."
-            href="https://deckr.netlify.app/"
+            title="Ecommerce"
+            /* subtitle="This is a task app that focuses on priority built with React. As the user adds a task it gets added to the forefront of a deck of previously added tasks." */
+            subtitle="Elevating shopping with stylish UI, seamless navigation, and secure transactions."
+            href="/"
           />
 
           {/* ROW 2 */}
           <Project
-            title="Homeland - Real Estate"
-            subtitle="Frontend Real Estate app built with React and Tailwind."
-            href="https://github.com/jamesrbowles/homeland-realestate"
+            title="Time Tracker App"
+            subtitle="Streamlining productivity with a minimalist design and precise time management."
+            href="/"
           />
           <Project
-            title="Real Estate - Strapi"
-            subtitle="Real Estate App built with React with Strapi for the Headless CMS"
-            href="https://github.com/jamesrbowles/Strapi-Real-Estate"
+            title="Photography Portfolio"
+            subtitle="Showcasing the clients visual journey through captivating snapshots and creative storytelling."
+            href="/"
           />
           <Project
-            title="Portfolio"
-            subtitle="My personal portfolio built with React"
-            href="https://jamesrbowles.github.io/react-portfolio/"
+            title="Photo Book"
+            subtitle="Turning memories into tangible emotions through a beautifully designed visual narrative."
+            href="/"
           />
 
           {/* ROW 3 */}
 
           <Project
-            title="Password Generator"
-            subtitle="Unique password generator app"
-            href="https://jamesrbowles.github.io/Password-Generator/"
+            title="Beauty Salon"
+            subtitle="Embracing elegance and serenity, merging design with a luxurious salon experience."
+            href="/"
+          />
+          <Project
+            title="3D Nature Display"
+            subtitle="Immerse in nature's wonders through an interactive, captivating 3D showcase."
+            href="/"
           />
           <div
             className="flex justify-center text-center items-center p-10 bg-green
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
           >
             SMOOTH USER EXPERIENCE
-          </div>
-          <div
-            className="flex justify-center text-center items-center p-10 bg-purple
-              max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
-          >
-            ABSOLUTE BESPOKE APPS
           </div>
         </motion.div>
       </div>

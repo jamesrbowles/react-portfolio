@@ -38,7 +38,7 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />
           </div>
-          <p className="text-center font-montserrat sm:text-left mt-10 ">
+          {/* <p className="text-center font-montserrat sm:text-left mt-10 ">
             As a Real Estate Web developer, I specialize in leveraging the
             latest and most advanced technologies to create exceptional
             websites. By utilizing Next.js and headless CMS platforms like
@@ -59,6 +59,29 @@ const MySkills = ({ skillFan, handleSkillFan }) => {
             In summary, I combine cutting-edge technology, meticulous
             optimization, and unwavering problem-solving abilities to deliver
             outstanding Real Estate websites that exceed expectations.
+          </p> */}
+          <p className="text-center font-montserrat sm:text-left mt-10">
+            As a UI/UX designer, I bring a blend of creativity and user-centered
+            thinking to every project.
+            <br></br>
+            <br></br>
+            With a keen eye for aesthetics, I craft visually appealing
+            interfaces that resonate with users. I'm proficient in translating
+            complex ideas into intuitive designs, ensuring seamless navigation
+            and engaging experiences. My skills encompass wireframing,
+            prototyping, and user testing, allowing me to iterate and optimize
+            designs based on real user feedback.
+            <br></br>
+            <br></br>
+            I'm well-versed in design tools like Adobe XD, Figma, and Sketch,
+            enabling me to transform concepts into polished visuals. My
+            dedication to understanding user behavior and needs empowers me to
+            create meaningful solutions that strike the perfect balance between
+            form and function.
+            <br></br>
+            <br></br>
+            I'm passionate about crafting designs that not only look impressive
+            but also enrich users' interactions, leaving a lasting impact.
           </p>
         </motion.div>
       </div>

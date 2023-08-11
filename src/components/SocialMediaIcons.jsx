@@ -1,10 +1,10 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub } from 'react-icons/fa';
 
 const SocialMediaIcons = () => {
   return (
     <div className="">
       <a
-        href="https://github.com/jamesrbowles"
+        href="/"
         target="_blank"
         rel="noreferrer"
         className="opacity-50 hover:opacity-100 transition duration-500 text-4xl"
